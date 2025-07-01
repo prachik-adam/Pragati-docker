@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Web Page</title>
+    <!-- Link to Google Fonts for a modern, clean look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset and Body Styles */
+        body {
+            font-family: 'Inter', sans-serif; /* Using the Inter font */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6; /* Light grey background */
+            color: #333; /* Dark grey text color */
+            line-height: 1.6;
+            display: flex; /* Use flexbox for centering content */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            min-height: 100vh; /* Ensure body takes full viewport height */
+        }
+
+        /* Main Container for Content */
+        .container {
+            background-color: #ffffff; /* White background for the content area */
+            padding: 40px;
+            border-radius: 12px; /* Slightly rounded corners */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+            max-width: 800px; /* Limit content width for readability */
+            width: 90%; /* Responsive width */
+            text-align: center; /* Center text within the container */
+        }
+
+        /* Header Styles */
+        h1 {
+            color: #2c3e50; /* Dark blue/grey for headings */
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            font-weight: 700; /* Bold heading */
+        }
+
+        /* Paragraph Styles */
+        p {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+            color: #555; /* Slightly lighter grey for paragraphs */
+        }
+
+        /* List Styles */
+        ul {
+            list-style: none; /* Remove default bullet points */
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        ul li {
+            background-color: #e8f0fe; /* Light blue background for list items */
+            margin-bottom: 10px;
+            padding: 15px 20px;
+            border-left: 5px solid #3498db; /* Blue left border accent */
+            border-radius: 8px; /* Rounded corners for list items */
+            font-size: 1.05em;
+            color: #2980b9; /* Darker blue text for list items */
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        ul li:hover {
+            transform: translateY(-3px); /* Slight lift effect on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Subtle shadow on hover */
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            background-color: #3498db; /* Blue button */
+            color: #ffffff; /* White text */
+            padding: 12px 25px;
+            text-decoration: none; /* Remove underline from links */
+            border-radius: 8px; /* Rounded button corners */
+            font-weight: 600; /* Semi-bold text */
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3); /* Soft blue shadow */
+        }
+
+        .button:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+            transform: translateY(-2px); /* Slight lift on hover */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            ul li {
+                padding: 12px 15px;
+                font-size: 0.95em;
+            }
+
+            .button {
+                padding: 10px 20px;
+                font-size: 0.95em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+                border-radius: 8px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Simple Page!</h1>
+        <p>This is a basic HTML page demonstrating simple styling using CSS. We've focused on readability, a clean layout, and a modern aesthetic.</p>
+
+        <p>Here are a few things you might find on a web page:</p>
+        <ul>
+            <li>Informative content about a topic.</li>
+            <li>Links to other interesting pages.</li>
+            <li>Interactive elements like forms or buttons.</li>
+            <li>Images or videos to enhance the experience.</li>
+        </ul>
+
+        <p>Feel free to explore and customize this template!</p>
+        <a href="#" class="button">Learn More</a>
+    </div>
+</body>
+</html>
